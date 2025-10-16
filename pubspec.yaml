@@ -1,0 +1,34 @@
+name: riverpod_drift
+description: "riverpod storage by drift"
+version: 0.0.1
+homepage: http://121.41.64.145:8092
+publish_to: http://121.41.64.145:8092
+
+environment:
+  sdk: ^3.6.0
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  riverpod: 3.0.3
+  drift: 2.28.2
+  drift_flutter: 0.2.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: any
+  drift_dev: 2.28.3
+
+flutter:
+  plugin:
+    platforms:
+    # This plugin project was generated without specifying any
+    # platforms with the `--platform` argument. If you see the `some_platform` map below, remove it and
+    # then add platforms following the instruction here:
+    # https://flutter.dev/to/pubspec-plugin-platforms
+    # -------------------
+      some_platform:
+        pluginClass: somePluginClass
