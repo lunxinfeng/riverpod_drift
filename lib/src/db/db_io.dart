@@ -23,7 +23,7 @@ import 'db.dart';
 DB connectDb(String dbPath) {
   final db = LazyDatabase(() async {
     final file = File(dbPath);
-    return NativeDatabase(file, logStatements: true);
+    return NativeDatabase(file);
   });
   return DB(db);
 }
