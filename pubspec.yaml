@@ -1,6 +1,6 @@
 name: riverpod_drift
 description: "riverpod storage by drift"
-version: 0.0.1
+version: 0.0.2
 homepage: http://121.41.64.145:8092
 publish_to: http://121.41.64.145:8092
 

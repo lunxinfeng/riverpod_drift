@@ -41,7 +41,8 @@ final class JsonSqFliteStorage extends Storage<String, String> {
 
   @override
   Future<void> delete(String key) async {
-    await (_db.delete(_db.dBRiverpod)..where((t) => t.key.equals(key))).go();
+    // riverpod 3.0.3 will delete when build error, but is not reasonable, wait fix
+    // await (_db.delete(_db.dBRiverpod)..where((t) => t.key.equals(key))).go();
   }
 
   int _currentTimestamp() => clock.now().toUtc().millisecondsSinceEpoch;
